@@ -1,0 +1,20 @@
+* Allie's dotfiles
+
+  contains most all of my dotfiles that are worth sharing.
+
+** emacs
+   my main editor.
+** vim
+   I still use vim occasionally, it starts up a lot faster than emacs
+   which is important for when i'm doing quick stuff
+** zsh
+   I use ZSH as my main shell. both .zshrc and .zprofile are included
+** conky
+*** dwm-statusbar
+** X related
+*** xinitrc/xsession
+*** Xresources
+** walls.pl
+   Config file for my wallpaper changer [[http://github.com/foxiepaws/walls.pl][Which can be found here]]
+
+
