@@ -1,7 +1,7 @@
 CC=clang
 CXX=clang++
 
-EDITOR=vim
+EDITOR=emacs
 
 PATH="$HOME/.bin:$PATH"
 PAGER=most
