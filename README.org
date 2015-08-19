@@ -11,10 +11,13 @@
    I use ZSH as my main shell. both .zshrc and .zprofile are included
 ** conky
 *** dwm-statusbar
+    A conkyrc and a lua lib for colourising. lua code for temps is not
+    portable at all (works on my FreeBSD 10.1 laptop)! Written for
+    [[https://github.com/foxiepaws/dwm-fox][dwm-fox]] with pango support (watch the repo for when it hits!) 
 ** X related
 *** xinitrc/xsession
+    starts dwm, compton, and various other things, pretty boring.
 *** Xresources
+    Xft and urxvt tweaks
 ** walls.pl
    Config file for my wallpaper changer [[http://github.com/foxiepaws/walls.pl][Which can be found here]]
-
-
