@@ -1,0 +1,10 @@
+out_to_console
+out_to_x no;
+lua_load /usr/home/allie/.config/conky/dwm_statusbar.lua
+
+TEXT
+cpu: ${lua cpu_colourise ${cpu}}% ${loadavg 2}avg ${freq_g}GHz ${lua dwm_temp} | \
+mem: t/u/f ${mem}/${memfree}/${memmax}/${memperc}% | \
+net: ${downspeedf wlan0}k D ${upspeedf wlan0}k U | \
+${battery_short 0} | \
+${time %H:%M}
