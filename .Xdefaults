@@ -1,0 +1,4 @@
+xrenoise.use_xcursors:	1
+xrenoise.display:	:0
+xrenoise.display_resource:	0x00,0x01,0xBF,0x94,0x15,0xFB,0xB9,0x9D
+xrenoise.executable_path:	/usr/local/bin/renoise-3.0.1

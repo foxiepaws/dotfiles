@@ -10,16 +10,16 @@ for p in $files; do
         mkdir -p "${HOME}/.config"
         mfiles="$(ls -a .config | perl -ne 'print unless /^\.{1,2}$/')"
         for f in $mfiles ; do 
-            echo "ln -s '${p}/${f}' \"$HOME/.config/${f%.config/}\""
+            ln -s "${PWD}/${p}/${f}" "$HOME/.config/${f%.config/}"
         done
     elif [[ "${p#/}" == ".bin" ]]; then
         mkdir -p "${HOME}/.bin"
         mfiles="$(ls -a .bin | perl -ne 'print unless /^\.{1,2}$/')"
         for f in $mfiles ; do 
-            echo "ln -s '${f}' \"$HOME/.bin/${f%.bin/}\""
+            ln -s "${PWD}/${f}" "$HOME/.bin/${f%.bin/}"
         done
     else 
-        echo "ln -s '${p}' \"$HOME/${p}\""
+        ln -s "${PWD}/${p}" "$HOME/${p}"
     fi
 done
     

@@ -1,0 +1,33 @@
+
+!!xft
+! xft stuff is important!
+Xft*dpi:       96
+Xft*antialias: True
+Xft*hinting:   Full
+
+
+
+!! URxvt
+! fuck the scrollbar
+URxvt*scrollBar: false
+! transparency
+URxvt*depth: 32
+! tiny dina so I can fit a lot more on my screen
+URxvt*font: xft:Dina:size=6
+
+! transparent background
+URxvt*background: [80]#262626
+URxvt*foreground: [100]#e4e4e4
+
+! dont lpr.
+URxvt*print-pipe: "cat > /dev/null"
+
+! clickable links
+URxvt*perl-ext-common:default,clipboard,matcher,keyboard-select
+URxvt*keysym.M-u:     perl:url-select:select_next
+URxvt*url-launcher:   /usr/local/bin/firefox
+URxvt*underlineURLs:  True
+URxvt*matcher.button: 1 
+
+
+
